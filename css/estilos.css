@@ -13,7 +13,7 @@ body{
     width: 100%;
     height: 100vh;
     color: #fff;
-    background: linear-gradient(-45deg, #c02425, #f0cb35, #bdc3c7); 
+    background: linear-gradient(-45deg, #1a2a6c, #b21f1f, #fdbb2d); 
     background-size: 400% 400%;
     position: relative;
     animation: change 10s ease-in-out infinite;
@@ -42,9 +42,28 @@ body{
     transform: (-50%, -50%);
     padding: 5rem 10rem;
 }
+.subTitulo{
+    font-family: 'Splash', cursive;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 70%;
+    left: 67%;
+    transform: (-50%, -50%);
+}
+.subTitulo2{
+    letter-spacing: 2px;
+    position: absolute;
+    top: 70%;
+    left: 67%;
+    transform: (-50%, -50%);
+}
 /*CLASES PARA DIVS*/
 .navSuperior{
     display:inline-block;
+}
+.borde{
+    border: 3px solid #fff;
+    position: absolute;
 }
 /*===== Transiciones =====*/
 
@@ -54,3 +73,12 @@ body{
     border: 1px solid #fff;
     transition: all 1s;
 }
+/*CLASE PARA CARRUSEL*/
+.carrusel{
+width: 500px;
+height: 500px;
+align-items: center;
+}
+
+
+/*#c02425, #f0cb35, #bdc3c7*/
