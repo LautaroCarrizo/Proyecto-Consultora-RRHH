@@ -9,7 +9,7 @@ body{
     font-family: 'EB Garamond', serif;
 }
 /* CLASES PARA BACKGROUND*/
-#fondoAnimado{
+/* #fondoAnimado{
     width: 100%;
     height: 100vh;
     color: #fff;
@@ -17,6 +17,22 @@ body{
     background-size: 400% 400%;
     position: relative;
     animation: change 10s ease-in-out infinite;
+} */
+.fondoInicio{
+    background: url(../img/fondoInicio.jpg) no-repeat center center;
+    min-height: 100vh;
+    background-size: cover;
+}
+.fondoInicio::before{
+    content: "";
+    width: 100%;
+    height:200%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364); 
+    opacity: 0.8;
+    margin-top: 77px;
 }
 .fondoNosotros{
     background: url(../img/fondorrhh2.jpg) no-repeat center center;
@@ -32,7 +48,7 @@ body{
     left: 0;
     background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364); 
     opacity: 0.8;
-   margin-top: 12vh;
+    margin-top: 77px;
    
 }
 .fondoServicios{
@@ -49,13 +65,25 @@ body{
     left: 0;
     background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364); 
     opacity: 0.5;
-   margin-top: 12vh;
+    margin-top: 77px;
    
 }
 .fondoContacto{
-    background: url(../img/contactpage.jpg) no-repeat center center;
+    background: url(../img/contacPage.jpg) no-repeat center center;
     min-height: 100vh;
     background-size: cover;
+}
+.fondoContacto::before{
+    content: "";
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    opacity: 0.8;
+   margin-top: 77px;
+   
 }
 
 .hijoFondo{
@@ -75,30 +103,29 @@ body{
 }
 /* CLASES PARA TITULO*/
 .tituloPrincipal{
-    font-size: 3rem;
+    font-size: 25px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    border: 3px solid #fff;
+    top: -10px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: (-50%, -50%);
-    padding: 5rem 10rem;
+    left: 80%;
+    padding: 2rem 5rem;
 }
 .subTitulo{
     font-family: 'Splash', cursive;
-    letter-spacing: 2px;
+    font-size: 1rem;
+    letter-spacing: 1px;
     position: absolute;
-    top: 70%;
-    left: 67%;
-    transform: (-50%, -50%);
+    top: 3px;
+    left: 105%;
+ 
 }
 .subTitulo2{
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    font-size: 1rem;
     position: absolute;
-    top: 70%;
-    left: 67%;
-    transform: (-50%, -50%);
+    top: 40px;
+    left: 84%;
 }
 .tituloHtml{
    left: 75%;
