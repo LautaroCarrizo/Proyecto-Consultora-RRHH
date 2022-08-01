@@ -140,14 +140,14 @@ body{
     }
  /*============================================ CLASES PARA CONTACTO.HTML=======================================*/     
  .fondoContacto{
-    background: url(../img/contacPage.jpg) no-repeat center center;
+    background: url(../img/fondoContacto2.jpg) no-repeat center center;
     min-height: 100vh;
     background-size: cover;
 }
 .fondoContacto::before{
     content: "";
     width: 100%;
-    height:100%;
+    height:135%;
     position: absolute;
     top: 0;
     left: 0;
@@ -163,6 +163,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .pagContacto .contenidoContacto{
     max-width: 800px;
@@ -186,20 +187,21 @@ body{
     display: flex;
 }
 .containerContact .infoContacto .caja .icono{
-    min-width: 60px;
-    height: 60px;
-    background: #fff;
+    min-width:60px;
+    height:60px;
+    background: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     font-size: 22px;
 }
+
 .containerContact .infoContacto .caja .textoContacto{
     display: flex;
     margin-left: 20px;
     font: 16px;
-    color: #fff;
+    color: rgb(206, 240, 253);
     flex-direction: column;
     font-weight: 300;
 }
@@ -214,16 +216,16 @@ body{
 }
 .formularioContacto h3{
     font-size: 30px;
-    color: rgb(59, 59, 59);
+    color: rgb(0, 0, 0);
     font-weight: 500;
 }
 .formularioContacto .inputCaja{
     position: relative;
     width: 100%;
-    margin-top: 25px;
+    margin-top: 10px;
 }
-.inputCaja .inputCaja input,
-.inputCaja .inputCaja textarea
+.formularioContacto .inputCaja input,
+.formularioContacto .inputCaja textarea
 {
     width: 100%;
     padding: 5px 0;
@@ -233,6 +235,34 @@ body{
 border-bottom: 2px solid #333;
 outline: none;
 resize: none;
+}
+.formularioContacto .inputCaja span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.formularioContacto .inputCaja input:focus ~ span,
+.formularioContacto .inputCaja input:valid ~ span,
+.formularioContacto .inputCaja textarea:focus ~ span,
+.formularioContacto .inputCaja textarea:valid ~ span
+{
+color: #e91e63;
+font-size: 12px;
+transform: translateY(-20px);
+}
+.formularioContacto .inputCaja input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
 }
 /*================================================= CLASES COMPARTIDAS ======================================*/
 /*=================================== FONDOS ===========================*/
